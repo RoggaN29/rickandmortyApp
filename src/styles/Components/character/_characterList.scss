@@ -1,0 +1,52 @@
+@import "../../base/variables";
+
+.cards--wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  background-color: $light-gray;
+  border: 1px solid $gray;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+
+  .data--character {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
+
+.loader--wapper {
+  position: relative;
+  height: calc(100vh - 150px);
+  .loader {
+    background: url("../../../assets/loader.gif") no-repeat center;
+    height: 80vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    @media (min-width: 992px) {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import './base/variables';
+@import './base/global';
+
+//components
+@import './components/character/characterList';
+@import './components/character/character';
+@import './Components/ui/searchBar';
+@import './Components/ui/characterCard';
+@import './Components/ui/characterCardDetail';

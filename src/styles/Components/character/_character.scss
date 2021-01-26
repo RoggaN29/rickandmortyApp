@@ -1,0 +1,28 @@
+@import "../../../styles/base/variables";
+
+.card--detail {
+  background-color: $light-gray;
+  border: 1px solid $gray;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 10px;
+
+  .data--character {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+.button-wapper {
+  display: block;
+  text-align: center;
+}
